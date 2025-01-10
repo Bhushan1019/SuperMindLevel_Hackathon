@@ -37,7 +37,7 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
 
   useEffect(() => {
     const wsConnection = new WebSocket(
-      "https://supermindlevel-hackathon.onrender.com"
+      "wss://supermindlevel-hackathon.onrender.com"
     );
     wsConnection.onmessage = (event) => {
       const data = JSON.parse(event.data);
