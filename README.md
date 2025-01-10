@@ -11,7 +11,7 @@
 
 ### Live Application
 
-- Production URL:
+- Production URL: https://socialsights.vercel.app/
 - Platform: Render
 - Status: Active
 
