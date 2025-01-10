@@ -73,7 +73,7 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
       setMessages((prev) => [...prev, { text: inputMessage, type: "user" }]);
 
       const response = await fetch(
-        "https://supermindlevel-hackathon.onrender.com",
+        "https://supermindlevel-hackathon.onrender.com/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
