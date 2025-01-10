@@ -37,7 +37,7 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
 
   useEffect(() => {
     const wsConnection = new WebSocket(
-      "wss://8f07-13-51-196-191.ngrok-free.app"
+      "https://supermindlevel-hackathon.onrender.com"
     );
     wsConnection.onmessage = (event) => {
       const data = JSON.parse(event.data);
@@ -73,7 +73,7 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
       setMessages((prev) => [...prev, { text: inputMessage, type: "user" }]);
 
       const response = await fetch(
-        "https://8f07-13-51-196-191.ngrok-free.app/chat",
+        "https://supermindlevel-hackathon.onrender.com",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
